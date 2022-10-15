@@ -1,0 +1,30 @@
+220410 002434.577|CONFIG|main|setFileHandlers|Now logging to /home/kenzu/Desktop/contests/wintercup/pc2-9.6.0/logs directory.
+220410 002434.582|INFO|main|info|
+220410 002434.618|INFO|main|info|Version 9.6.0 20190102 (Wednesday, January 2nd 2019 01:20 UTC) Java ver 11.0.14.1 build 5102 Linux 5.13.0-39-generic (amd64) 
+220410 002434.618|INFO|main|startLog|Working directory is /home/kenzu/Desktop/contests/wintercup/pc2-9.6.0
+220410 002434.819|INFO|main|startLog|Process id is 373712@kenzu-X550JX
+220410 002434.820|INFO|main|start|Starting ConnectionManager...
+220410 002435.075|INFO|main|start|Started ConnectionManager
+220410 002435.104|INFO|main|setClientServerAndPort|INIFile File location: file:/home/kenzu/Desktop/contests/wintercup/pc2-9.6.0/pc2v9.ini
+220410 002435.105|INFO|main|setClientServerAndPort|setClientServerAndPort pc2.wintercup.lan parsed as pc2.wintercup.lan port 50002
+220410 002435.105|INFO|main|info|Contacting server at pc2.wintercup.lan:50002
+220410 002435.106|INFO|main|connectToMyServer|Connecting to pc2.wintercup.lan:50002
+220410 002435.537|INFO|Thread-0|receiveUnencrypted|receiveUnencrypted(TransportWrapper, ConnectionHandlerID=Socket[addr=pc2.wintercup.lan/10.201.14.13,port=50002,localport=37630]--6102496470406446710)
+220410 002435.901|INFO|Thread-0|receiveUnencrypted|receiveUnencrypted Made a secret key for Socket[addr=pc2.wintercup.lan/10.201.14.13,port=50002,localport=37630]--6102496470406446710 key is com.sun.crypto.provider.DESKey@fffe7b15
+220410 002435.902|INFO|Thread-0|getPublicKeyPacket|Generating Unencrypted Public Key Packet
+220410 002435.903|INFO|Thread-0|getPublicKeyPacket|checking key:= SunJCE Diffie-Hellman Public Key:
+y:
+    49c4d11f d58db8cd 02f0d466 89bea680 be4bc4b6 415da8d7 e0655c14 bb918064
+    c258f4f1 4c25764d 07f8aab1 81b41ec2 f322864d ba4182e4 c77fc011 afad80bb
+    4a1397ed 0214acc6 3f72c537 2f6c76ec a2e4c1cb 061adb88 30dc734c ecdda43b
+    8e70f5f1 1e8b51aa 55979807 1cf71138 46f80c32 c90f7bbe 6ef02443 4bb75c50
+p:
+    f488fd58 4e49dbcd 20b49de4 9107366b 336c380d 451d0f7c 88b31c7c 5b2d8ef6
+    f3c923c0 43f0a55b 188d8ebb 558cb85d 38d334fd 7c175743 a31d186c de33212c
+    b52aff3c e1b12940 18118d7c 84a70a72 d686c403 19c80729 7aca950c d9969fab
+    d00a509b 0246d308 3d66a45d 419f9c7c bd894b22 1926baab a25ec355 e92f78c7
+g:
+    02
+l:
+    512
+220410 002435.903|INFO|Thread-0|getPublicKeyPacket|packet:= edu.csus.ecs.pc2.core.transport.TransportWrapper@7d7edae2
