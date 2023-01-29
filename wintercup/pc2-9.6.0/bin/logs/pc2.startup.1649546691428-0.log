@@ -1,9 +1,0 @@
-220410 002451.467|CONFIG|main|setFileHandlers|Now logging to /home/kenzu/Desktop/contests/wintercup/pc2-9.6.0/bin/logs directory.
-220410 002451.469|INFO|main|info|
-220410 002451.472|INFO|main|info|Version 9.6.0 20190102 (Wednesday, January 2nd 2019 01:20 UTC) Java ver 11.0.14.1 build 5102 Linux 5.13.0-39-generic (amd64) 
-220410 002451.473|INFO|main|startLog|Working directory is /home/kenzu/Desktop/contests/wintercup/pc2-9.6.0/bin
-220410 002451.500|INFO|main|startLog|Process id is 373860@kenzu-X550JX
-220410 002451.501|INFO|main|start|Starting ConnectionManager...
-220410 002451.621|INFO|main|start|Started ConnectionManager
-220410 002451.621|SEVERE|main|fatalError|Cannot start PC^2, pc2v9.ini file not found in /home/kenzu/Desktop/contests/wintercup/pc2-9.6.0/bin
-220410 002451.622|INFO|main|fatalError|PC^2 halted
