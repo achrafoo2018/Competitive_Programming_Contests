@@ -61,7 +61,8 @@ sim dor(const c&) { ris; }
 
 
 void solve(){
-	
+	int b, c, h; cin >> b >> c >> h;
+	cout << min(2 * b - 1, 2 * (c + h) + 1) << endl;
 }
 
 int main(){

@@ -59,9 +59,64 @@ sim dor(const c&) { ris; }
 #define Forr(i, n, p) for(int i=p; i < n; ++i)
 #define dd(arr) For(i, arr.size()) cout << arr[i] << " "; cout << endl;
 
-
+int n; 
+vi arr;
+vector<set<int>> graph;
+vi visited;
+void dfs(int i){
+	visited[i] = 1;
+	for(int e : graph[i]){
+		if(!visited[e]){
+			dfs(e);
+		}
+	}
+}
 void solve(){
-	
+	graph.clear();
+	arr.clear();
+	cin >> n;
+	graph.resize(n);
+	arr.resize(n);
+	visited.assign(n, 0);
+	vi used(n, 0);
+	For(i, n){
+		cin >> arr[i];
+		if(arr[i] == 0) continue;
+		if(arr[i] == 1){
+			if(i > 0 && !used[i-1]){
+				graph[i].insert(i-1);
+				graph[i-1].insert(i);
+				used[i-1] = 1;
+			}else if(i+1 < n){
+				graph[i].insert(i+1);
+				graph[i+1].insert(i);
+				used[i+1] = 1;
+				used[i] = 1;
+			}
+			continue;
+		}
+		used[i] = 1;
+		if(i > 0 && !used[i-1]){
+			graph[i].insert(i-1);
+			graph[i-1].insert(i);
+			used[i-1] = 1;
+		}
+		if(i+1 < n){
+			graph[i].insert(i+1);
+			graph[i+1].insert(i);
+			used[i+1] = 1;
+		}
+	}
+	debug() << imie(graph);
+	int ans = 0;
+	For(i, n){
+		if(!visited[i]){
+			ans++;
+			dfs(i);
+			debug() << imie(visited);
+		}
+	}
+	cout << ans << endl;
 }
 
 int main(){
@@ -71,7 +126,7 @@ int main(){
 	// freopen("input.in", "r", stdin);
 	// freopen("output.out", "w", stdout);
 	int t = 1;
-	cin >> t;
+	// cin >> t;
 	while(t--)
 		solve();
 	return 0;

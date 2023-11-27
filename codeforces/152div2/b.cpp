@@ -61,7 +61,22 @@ sim dor(const c&) { ris; }
 
 
 void solve(){
-	
+	int n, k; cin >> n >> k;
+	vpii arr(n);
+	For(i, n){
+		int x; cin >> x;
+		if(x % k == 0)
+			arr[i].first = k;
+		else
+			arr[i].first = x % k;
+		arr[i].second = (-i);
+	}
+	sort(all(arr));
+	debug() << imie(arr);
+	for(int i=n-1; i >= 0; i--){
+		cout << -arr[i].second + 1 << " ";
+	}
+	cout << endl;
 }
 
 int main(){
